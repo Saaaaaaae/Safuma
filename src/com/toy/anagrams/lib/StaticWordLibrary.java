@@ -134,9 +134,10 @@ final class StaticWordLibrary extends WordLibrary {
         "evtrxe",
         "nuisngde",
         "rtdatioialn"
-    };*/
+    };
+    */
     
-    private static String Random(int idx){
+    private static final String Random(int idx){
     	String word = WORD_LIST[idx];
     	String[] wordlist = new String[word.length()+1];
     	for(int i = 0; i< wordlist.length; i++ ){
@@ -151,7 +152,8 @@ final class StaticWordLibrary extends WordLibrary {
     		 changedWord += List2[j];
     	 }
      return changedWord;
-    }
+    };
+    
     
     final static WordLibrary DEFAULT = new StaticWordLibrary();
 
